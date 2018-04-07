@@ -1,0 +1,15 @@
+task> taski 100
+Task manager is initialized (100)
+
+task> taskn -n okde 142
+Task node inserted: (okde, 142)
+
+task> taskr -n okde
+Task node removed: (okde, 142)
+
+task> taskq -hash
+(okde, 142)
+Number of tasks: 0
+
+task> quit -f
+

@@ -1,0 +1,11 @@
+task> taski 100
+Task manager is initialized (100)
+
+task> taskn -n ogd 478
+Task node inserted: (ogd, 478)
+
+task> taskq -min
+Min task node: (ogd, 478)
+
+task> quit -f
+

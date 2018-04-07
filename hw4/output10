@@ -1,0 +1,2976 @@
+mtest> mtr 30
+32
+Illegal block size (30)!!
+Error: Illegal option!! (30)
+
+mtest> mtp
+=========================================
+=              Memory Manager           =
+=========================================
+* Block size            : 65536 Bytes
+* Number of blocks      : 1
+* Free mem in last block: 65536
+* Recycle list          : 
+
+=========================================
+=             class MemTest             =
+=========================================
+Object list ---
+
+Array list ---
+
+
+mtest> mtp
+=========================================
+=              Memory Manager           =
+=========================================
+* Block size            : 65536 Bytes
+* Number of blocks      : 1
+* Free mem in last block: 65536
+* Recycle list          : 
+
+=========================================
+=             class MemTest             =
+=========================================
+Object list ---
+
+Array list ---
+
+
+mtest> mtn 1000
+
+mtest> mtp
+=========================================
+=              Memory Manager           =
+=========================================
+* Block size            : 65536 Bytes
+* Number of blocks      : 1
+* Free mem in last block: 9536
+* Recycle list          : 
+
+=========================================
+=             class MemTest             =
+=========================================
+Object list ---
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+
+Array list ---
+
+
+mtest> mtr 90
+
+mtest> mtp
+=========================================
+=              Memory Manager           =
+=========================================
+* Block size            : 96 Bytes
+* Number of blocks      : 1
+* Free mem in last block: 96
+* Recycle list          : 
+
+=========================================
+=             class MemTest             =
+=========================================
+Object list ---
+
+Array list ---
+
+
+mtest> mtn 1000 -a 1
+
+mtest> mtp
+=========================================
+=              Memory Manager           =
+=========================================
+* Block size            : 96 Bytes
+* Number of blocks      : 1000
+* Free mem in last block: 32
+* Recycle list          : 
+
+=========================================
+=             class MemTest             =
+=========================================
+Object list ---
+
+Array list ---
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+
+
+mtest> mtn 1000 -a 2
+Requested memory (112) is greater than block size(96). Exception raised...
+
+mtest> mtp
+=========================================
+=              Memory Manager           =
+=========================================
+* Block size            : 96 Bytes
+* Number of blocks      : 1000
+* Free mem in last block: 32
+* Recycle list          : 
+
+=========================================
+=             class MemTest             =
+=========================================
+Object list ---
+
+Array list ---
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+
+
+mtest> mtn 1000 -a 3
+Requested memory (168) is greater than block size(96). Exception raised...
+
+mtest> mtp
+=========================================
+=              Memory Manager           =
+=========================================
+* Block size            : 96 Bytes
+* Number of blocks      : 1000
+* Free mem in last block: 32
+* Recycle list          : 
+
+=========================================
+=             class MemTest             =
+=========================================
+Object list ---
+
+Array list ---
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+
+
+mtest> mtd -i 500
+Size of object list (0) is <= 500!!
+Error: Illegal option!! (500)
+
+mtest> mtp
+=========================================
+=              Memory Manager           =
+=========================================
+* Block size            : 96 Bytes
+* Number of blocks      : 1000
+* Free mem in last block: 32
+* Recycle list          : 
+
+=========================================
+=             class MemTest             =
+=========================================
+Object list ---
+
+Array list ---
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+
+
+mtest> mtd -i 700 -a
+
+mtest> mtp
+=========================================
+=              Memory Manager           =
+=========================================
+* Block size            : 96 Bytes
+* Number of blocks      : 1000
+* Free mem in last block: 32
+* Recycle list          : 
+[  1] = 1         
+=========================================
+=             class MemTest             =
+=========================================
+Object list ---
+
+Array list ---
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+xooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+
+
+mtest> mtr 200
+
+mtest> mtp
+=========================================
+=              Memory Manager           =
+=========================================
+* Block size            : 200 Bytes
+* Number of blocks      : 1
+* Free mem in last block: 200
+* Recycle list          : 
+
+=========================================
+=             class MemTest             =
+=========================================
+Object list ---
+
+Array list ---
+
+
+mtest> mtd -i 2000 -a
+Size of array list (0) is <= 2000!!
+Error: Illegal option!! (2000)
+
+mtest> mtp
+=========================================
+=              Memory Manager           =
+=========================================
+* Block size            : 200 Bytes
+* Number of blocks      : 1
+* Free mem in last block: 200
+* Recycle list          : 
+
+=========================================
+=             class MemTest             =
+=========================================
+Object list ---
+
+Array list ---
+
+
+mtest> mtd -i 3000 -a
+Size of array list (0) is <= 3000!!
+Error: Illegal option!! (3000)
+
+mtest> mtp
+=========================================
+=              Memory Manager           =
+=========================================
+* Block size            : 200 Bytes
+* Number of blocks      : 1
+* Free mem in last block: 200
+* Recycle list          : 
+
+=========================================
+=             class MemTest             =
+=========================================
+Object list ---
+
+Array list ---
+
+
+mtest> mtdel -r 3
+Size of object list is 0!!
+
+mtest> mtp
+=========================================
+=              Memory Manager           =
+=========================================
+* Block size            : 200 Bytes
+* Number of blocks      : 1
+* Free mem in last block: 200
+* Recycle list          : 
+
+=========================================
+=             class MemTest             =
+=========================================
+Object list ---
+
+Array list ---
+
+
+mtest> mtdel -r 2 -a
+Size of array list is 0!!
+
+mtest> mtp
+=========================================
+=              Memory Manager           =
+=========================================
+* Block size            : 200 Bytes
+* Number of blocks      : 1
+* Free mem in last block: 200
+* Recycle list          : 
+
+=========================================
+=             class MemTest             =
+=========================================
+Object list ---
+
+Array list ---
+
+
+mtest> mtp
+=========================================
+=              Memory Manager           =
+=========================================
+* Block size            : 200 Bytes
+* Number of blocks      : 1
+* Free mem in last block: 200
+* Recycle list          : 
+
+=========================================
+=             class MemTest             =
+=========================================
+Object list ---
+
+Array list ---
+
+
+mtest> mtdel -r 8 -a
+Size of array list is 0!!
+
+mtest> mtp
+=========================================
+=              Memory Manager           =
+=========================================
+* Block size            : 200 Bytes
+* Number of blocks      : 1
+* Free mem in last block: 200
+* Recycle list          : 
+
+=========================================
+=             class MemTest             =
+=========================================
+Object list ---
+
+Array list ---
+
+
+mtest> mtdel -i 12 -a
+Size of array list (0) is <= 12!!
+Error: Illegal option!! (12)
+
+mtest> mtp
+=========================================
+=              Memory Manager           =
+=========================================
+* Block size            : 200 Bytes
+* Number of blocks      : 1
+* Free mem in last block: 200
+* Recycle list          : 
+
+=========================================
+=             class MemTest             =
+=========================================
+Object list ---
+
+Array list ---
+
+
+mtest> mtr 500
+
+mtest> mtp
+=========================================
+=              Memory Manager           =
+=========================================
+* Block size            : 504 Bytes
+* Number of blocks      : 1
+* Free mem in last block: 504
+* Recycle list          : 
+
+=========================================
+=             class MemTest             =
+=========================================
+Object list ---
+
+Array list ---
+
+
+mtest> mtn 1000
+
+mtest> mtp
+=========================================
+=              Memory Manager           =
+=========================================
+* Block size            : 504 Bytes
+* Number of blocks      : 112
+* Free mem in last block: 448
+* Recycle list          : 
+
+=========================================
+=             class MemTest             =
+=========================================
+Object list ---
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+
+Array list ---
+
+
+mtest> mtn 1000 -a 1
+
+mtest> mtp
+=========================================
+=              Memory Manager           =
+=========================================
+* Block size            : 504 Bytes
+* Number of blocks      : 254
+* Free mem in last block: 120
+* Recycle list          : 
+[  0] = 141       
+=========================================
+=             class MemTest             =
+=========================================
+Object list ---
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+
+Array list ---
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+
+
+mtest> mtn 1000 -a 2
+
+mtest> mtp
+=========================================
+=              Memory Manager           =
+=========================================
+* Block size            : 504 Bytes
+* Number of blocks      : 504
+* Free mem in last block: 168
+* Recycle list          : 
+[  0] = 390       
+=========================================
+=             class MemTest             =
+=========================================
+Object list ---
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+
+Array list ---
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+
+
+mtest> mtr 20
+24
+Illegal block size (20)!!
+Error: Illegal option!! (20)
+
+mtest> mtp
+=========================================
+=              Memory Manager           =
+=========================================
+* Block size            : 504 Bytes
+* Number of blocks      : 504
+* Free mem in last block: 168
+* Recycle list          : 
+[  0] = 390       
+=========================================
+=             class MemTest             =
+=========================================
+Object list ---
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+
+Array list ---
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+
+
+mtest> mtn 1000 -a 3
+
+mtest> mtp
+=========================================
+=              Memory Manager           =
+=========================================
+* Block size            : 504 Bytes
+* Number of blocks      : 837
+* Free mem in last block: 0
+* Recycle list          : 
+[  0] = 390       
+=========================================
+=             class MemTest             =
+=========================================
+Object list ---
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+
+Array list ---
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+
+
+mtest> mtd -i 500
+
+mtest> mtp
+=========================================
+=              Memory Manager           =
+=========================================
+* Block size            : 504 Bytes
+* Number of blocks      : 837
+* Free mem in last block: 0
+* Recycle list          : 
+[  0] = 391       
+=========================================
+=             class MemTest             =
+=========================================
+Object list ---
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+xooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+
+Array list ---
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+
+
+mtest> mtd -i 700 -a
+
+mtest> mtp
+=========================================
+=              Memory Manager           =
+=========================================
+* Block size            : 504 Bytes
+* Number of blocks      : 837
+* Free mem in last block: 0
+* Recycle list          : 
+[  0] = 391       [  1] = 1         
+=========================================
+=             class MemTest             =
+=========================================
+Object list ---
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+xooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+
+Array list ---
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+xooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+
+
+mtest> mtp
+=========================================
+=              Memory Manager           =
+=========================================
+* Block size            : 504 Bytes
+* Number of blocks      : 837
+* Free mem in last block: 0
+* Recycle list          : 
+[  0] = 391       [  1] = 1         
+=========================================
+=             class MemTest             =
+=========================================
+Object list ---
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+xooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+
+Array list ---
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+xooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+
+
+mtest> mtr 10000
+
+mtest> mtp
+=========================================
+=              Memory Manager           =
+=========================================
+* Block size            : 10000 Bytes
+* Number of blocks      : 1
+* Free mem in last block: 10000
+* Recycle list          : 
+
+=========================================
+=             class MemTest             =
+=========================================
+Object list ---
+
+Array list ---
+
+
+mtest> mtn 10 -a 500
+Requested memory (26008) is greater than block size(10000). Exception raised...
+
+mtest> mtp
+=========================================
+=              Memory Manager           =
+=========================================
+* Block size            : 10000 Bytes
+* Number of blocks      : 1
+* Free mem in last block: 10000
+* Recycle list          : 
+
+=========================================
+=             class MemTest             =
+=========================================
+Object list ---
+
+Array list ---
+
+
+mtest> mtn 20 -a 300
+Requested memory (15608) is greater than block size(10000). Exception raised...
+
+mtest> mtp
+=========================================
+=              Memory Manager           =
+=========================================
+* Block size            : 10000 Bytes
+* Number of blocks      : 1
+* Free mem in last block: 10000
+* Recycle list          : 
+
+=========================================
+=             class MemTest             =
+=========================================
+Object list ---
+
+Array list ---
+
+
+mtest> mtn 30 -a 100
+
+mtest> mtp
+=========================================
+=              Memory Manager           =
+=========================================
+* Block size            : 10000 Bytes
+* Number of blocks      : 30
+* Free mem in last block: 4792
+* Recycle list          : 
+[ 92] = 29        
+=========================================
+=             class MemTest             =
+=========================================
+Object list ---
+
+Array list ---
+oooooooooooooooooooooooooooooo
+
+mtest> mtn 100 -a 50
+
+mtest> mtp
+=========================================
+=              Memory Manager           =
+=========================================
+* Block size            : 10000 Bytes
+* Number of blocks      : 63
+* Free mem in last block: 2176
+* Recycle list          : 
+[ 41] = 33        [ 92] = 29        
+=========================================
+=             class MemTest             =
+=========================================
+Object list ---
+
+Array list ---
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooo
+
+mtest> mtn 200 -a 30
+
+mtest> mtp
+=========================================
+=              Memory Manager           =
+=========================================
+* Block size            : 10000 Bytes
+* Number of blocks      : 97
+* Free mem in last block: 8432
+* Recycle list          : 
+[ 11] = 34        [ 41] = 33        [ 92] = 29        
+=========================================
+=             class MemTest             =
+=========================================
+Object list ---
+
+Array list ---
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooo
+
+mtest> mtn 300 -a 10
+
+mtest> mtp
+=========================================
+=              Memory Manager           =
+=========================================
+* Block size            : 10000 Bytes
+* Number of blocks      : 113
+* Free mem in last block: 2080
+* Recycle list          : 
+[  9] = 16        [ 11] = 34        [ 41] = 33        [ 92] = 29        
+
+=========================================
+=             class MemTest             =
+=========================================
+Object list ---
+
+Array list ---
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooo
+
+mtest> mtd -i 20 -a
+
+mtest> mtp
+=========================================
+=              Memory Manager           =
+=========================================
+* Block size            : 10000 Bytes
+* Number of blocks      : 113
+* Free mem in last block: 2080
+* Recycle list          : 
+[  9] = 16        [ 11] = 34        [ 41] = 33        [ 92] = 29        
+[100] = 1         
+=========================================
+=             class MemTest             =
+=========================================
+Object list ---
+
+Array list ---
+ooooooooooooooooooooxooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooo
+
+mtest> mtd -i 30 -a
+
+mtest> mtp
+=========================================
+=              Memory Manager           =
+=========================================
+* Block size            : 10000 Bytes
+* Number of blocks      : 113
+* Free mem in last block: 2080
+* Recycle list          : 
+[  9] = 16        [ 11] = 34        [ 41] = 33        [ 50] = 1         
+[ 92] = 29        [100] = 1         
+=========================================
+=             class MemTest             =
+=========================================
+Object list ---
+
+Array list ---
+ooooooooooooooooooooxoooooooooxooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooo
+
+mtest> mtn 10000
+
+mtest> mtp
+=========================================
+=              Memory Manager           =
+=========================================
+* Block size            : 10000 Bytes
+* Number of blocks      : 169
+* Free mem in last block: 312
+* Recycle list          : 
+[  9] = 16        [ 11] = 34        [ 41] = 33        [ 50] = 1         
+[ 92] = 29        [100] = 1         
+=========================================
+=             class MemTest             =
+=========================================
+Object list ---
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+
+Array list ---
+ooooooooooooooooooooxoooooooooxooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooo
+
+mtest> mtdel -r 300
+
+mtest> mtp
+=========================================
+=              Memory Manager           =
+=========================================
+* Block size            : 10000 Bytes
+* Number of blocks      : 169
+* Free mem in last block: 312
+* Recycle list          : 
+[  0] = 296       [  9] = 16        [ 11] = 34        [ 41] = 33        
+[ 50] = 1         [ 92] = 29        [100] = 1         
+=========================================
+=             class MemTest             =
+=========================================
+Object list ---
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooxoooooooooooooooooooooooooooooooxooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooxoooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooxoooo
+ooooooooooooooooooooooxooooooooooooooooooooooooxoo
+ooooooooooooooooooooooooooooooooxooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooxooooooooo
+xooooxoooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooxooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooxoooooxoooooooxooooxxooooooooooooooooooooooooo
+oooooooooooooooxoooooooooooooooooooooooooooooooooo
+ooooooooooooxooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooooxooooooooooooooxoooooo
+ooooooooooooooooooooooooooooooooooooooooooooooooxo
+oooooooooooooooooooooooooooxoooooooooooooooooooooo
+oooooooooooooooooxoooooxoooooooooooooooooooooooooo
+ooooooooooooooooooooooooooooooooxooooooooooooooooo
+oooooooooooooooxoxoooxoooooooooooooooooooooooooooo
+ooxooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oxoooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooxoooooooooooooooooooooooooooooooooooo
+xooooooooooooooooooooxooooooooooooooxooooooooxoooo
+oooooooooooooooooxoooooooooooooooooooooooooooooooo
+oooooxoooooooooooooooooooooooooooooooooooooooooooo
+ooooooxoooooooooooooooooooooooxoooooooooxooooooooo
+ooooooooxoooooooooooooooxoooooooooooxoooooooooxooo
+ooooooooooxooooooooooooooxoooooooooooooooooooooooo
+ooooooooooooooooooooxoxoooxooooooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooxooooo
+ooooooooooooooooooooooooooooooooooooooooooooooxooo
+ooooooxoooooooooooooooooooooooooooooxooooooooooooo
+oooooooooooooooooooooooooooooooooooxoooxoooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooxooooooooooooooooooooooooooooo
+ooooooooooxoooooooooooooooooooxooooooooooooooxoooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooxoooooooooooooo
+ooooooooooxxoooooooooooooooooooooooooooooooooooooo
+ooooxooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooxoooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooxooooooooooooooooooooooo
+oooooooooooooxoooooooxoooooooooooooooooooooooooooo
+ooooooooooooooxooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooooooox
+oooooooooooooooooooooooxoooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooxooooooooxo
+oooooooooooooxoooooooooxoooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooxoxoooooooooo
+oooooooooooooooooooooooxoooooooooooooooooooooooxoo
+oooooooooooooooooooooooooooooooooooxoooooooooooooo
+oooooooooooooooooooxoooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooxoooooooooxoooo
+oooooooooooooxooooooooxooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooxoooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooooooox
+ooxoooooooooooooxooooxooooooxoooooooooooooooooxooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooxooooooooooooooooooooooooooooooooooooooooo
+ooooooooooxoooooxooooooxooooooxooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooxooooooooooooo
+ooxoooooooooooooooooooooooooxoooooooooooooooooxooo
+oooooooooooooooooooooooxoooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooxoooooooooooooo
+ooooooooooooxooooooooooooooooooxoooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooxooooooooxo
+ooooxooooooooooooooooooooooooooooooooooooooooxooxo
+oooooxooooooooooooooooooooooooooooooxooooooooooooo
+oooooooooooooooooooxoooooooooooooxoooooooooooooooo
+oooooooooooooooooooooxooxooooooooooooooooooooooxoo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooxoooooxooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooxoooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooxoooooooxoooooooooooooooooooooooxooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooxooooooo
+oooooooooooooooooooooooxoooooooxoooooooooxoooooooo
+oooooooooooooooooooooooooooxooooooooooooooooxooooo
+ooooooooooooooooooooooooooooxooooooooooooxoooxoooo
+oooooooooooooooooooooooooooooooooooooooooooooooxoo
+oooooooooooooooooooooooooooooooooooooooooooooxoooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooxooooooooooooooxoooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooxooxooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooxoooooo
+ooooooooooooooxooooooooooooooooooooooooooooooooooo
+ooxoooooooxooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooxooooooooooooooooooox
+xoooooooooooooooooooooooooooooooooooxooooooooooooo
+oooooooooooooooooooooooooooooooooooooooxoooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooxoooooooooooxoooooooooooooooo
+oooooooooooooooooooooooooooooooxoooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooooxooo
+ooooooooooooooooooooooooooooooooooooxooooooooooooo
+xooooooooooooooooooooooooooooooooxoooooooooooooooo
+oooooooxooooooxooooooooooooooooooxoooooooooooooooo
+oooxoooooooooooooooxoooooooooooooooooooooooooooooo
+oooxoooooooxoooooooooxooooooooooooxooooooooooooooo
+ooooooooooooooooooooooooxooxoooooxoooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooxooxooooooooooooooooooooxoooooooooooooo
+ooooooooxooooooooooooooooooooxoxoooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooxooooooooooooooooooooooooooooooooo
+ooooooooooooxoooooooooooooooooxooooooxoooooooooooo
+ooooooooooooxooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooxoooooooooooooooooooooooooooooooxoooooooo
+oooooooooooooooxoooooooooooooxoooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooxoooooooooo
+oooooooooooooooxoooooooooooooooooooooooooooooooooo
+ooooxoooooooooooooooxooooooooooooooooooooooooooooo
+ooooooooxoooxooooooooooooooooooooooooooooooooooooo
+ooooxooooooooooooooooooooooooooooooooooooooxoooooo
+ooooxooooooooooooooooooooooxoooooooooooooooxoooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooxooooooooooooooooooooooooooxoooooooooo
+ooxooooooooooooxooooooooooxooooooxoooooooooooooooo
+oooooooooooooooooooooooooooxoooooooooooooooooooooo
+oooooooxoxooooooooooooooooooooooooooooooooooooooox
+ooooooooooooooooxooooooooxoooooooooooooooooooooooo
+ooooooooooooooooooooxoooxxoooooooooxxoooooooooxooo
+oooooooooooooooooooooooooxoooooooooooooooooooooooo
+oooooooooooooooooooooooooooooxoooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooooxooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooxooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooxooooooooooooooooooooooooooooooxoooooooo
+oooooooxoooooooxoooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooxooooooooooooooooooooxoo
+oooooooooooxoooooooooooxooooooooooooxooooooooooooo
+ooooooooooooooooooooooooooooxoooxooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooxooooooooooooooxo
+ooooooooooooooooxoooooooooxooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooxoooooooooooooooooo
+oooooooooooooooooooooooooooooooxoooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooxoxoooooooooooooooooooooox
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooxooooooooxoooooooooooooooooooooooo
+oooooxooooooxooooooooooooooooooooooooooooooooooooo
+oxoooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooooooxo
+oooooooooooooooooooooooooooooooooooooxooooooooooxo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooxooooooooxooooooooooxoooxooooooooxoo
+ooooxooxooooooooooooooooooooooooooooxooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooxoooooooooooooooooooooooooooooooooooo
+oooooooxoooooooooooooooooooooooooooooooooooooooooo
+oooooooxoooooooooooxxooooooooooooooooooooooooooooo
+oooxooooooooooooooooooooooooooooxooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooooooxo
+ooooooooxooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooxoooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oxooooooooooxooooooooooooooxoooooooooooooooooooooo
+oooooooooooxoooooooooooooooooooxoooooooooooooooooo
+oooooooooooooooooooooooooxoooooooooooooooooooooooo
+ooxooooooooxooooooooooooooxooooooooooooooooooooooo
+ooooooooooooooooooooooxooooooooooooooooooooooooooo
+oooooooxooooooooooxooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooxoooooo
+xxoooooooooooooooooooooooxoooooooooooooooooooooooo
+oooooooxoooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+xoooooooooooooooooooooooooooooooooooooooooooxooooo
+ooooooooooooooooooooooooooooooooooooooooooooooooxo
+ooooooxoooooooxooooooooooooooooooooooooooooooooooo
+oxoooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooxoooooooo
+oxoooxoooooooooooooooooooooooooooooooooooooooooooo
+ooooooxooooooooooooooooooooooooooooxoooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooxoooooooooooooooooooooooooxooo
+ooooooooooooooxoooooooooooooxoooxooooooooooooooooo
+oooooooooooooxooooooooooooooooxooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooxoooooooooooooooooooo
+xooooooooooooooooooooooooooooooooooooooooooooooooo
+
+Array list ---
+ooooooooooooooooooooxoooooooooxooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooo
+
+mtest> mtdel -r 200 -a
+
+mtest> mtp
+=========================================
+=              Memory Manager           =
+=========================================
+* Block size            : 10000 Bytes
+* Number of blocks      : 169
+* Free mem in last block: 312
+* Recycle list          : 
+[  0] = 296       [  9] = 16        [ 10] = 81        [ 11] = 34        
+[ 30] = 60        [ 41] = 33        [ 50] = 27        [ 92] = 29        
+[100] = 8         
+=========================================
+=             class MemTest             =
+=========================================
+Object list ---
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooxoooooooooooooooooooooooooooooooxooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooxoooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooxoooo
+ooooooooooooooooooooooxooooooooooooooooooooooooxoo
+ooooooooooooooooooooooooooooooooxooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooxooooooooo
+xooooxoooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooxooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooxoooooxoooooooxooooxxooooooooooooooooooooooooo
+oooooooooooooooxoooooooooooooooooooooooooooooooooo
+ooooooooooooxooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooooxooooooooooooooxoooooo
+ooooooooooooooooooooooooooooooooooooooooooooooooxo
+oooooooooooooooooooooooooooxoooooooooooooooooooooo
+oooooooooooooooooxoooooxoooooooooooooooooooooooooo
+ooooooooooooooooooooooooooooooooxooooooooooooooooo
+oooooooooooooooxoxoooxoooooooooooooooooooooooooooo
+ooxooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oxoooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooxoooooooooooooooooooooooooooooooooooo
+xooooooooooooooooooooxooooooooooooooxooooooooxoooo
+oooooooooooooooooxoooooooooooooooooooooooooooooooo
+oooooxoooooooooooooooooooooooooooooooooooooooooooo
+ooooooxoooooooooooooooooooooooxoooooooooxooooooooo
+ooooooooxoooooooooooooooxoooooooooooxoooooooooxooo
+ooooooooooxooooooooooooooxoooooooooooooooooooooooo
+ooooooooooooooooooooxoxoooxooooooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooxooooo
+ooooooooooooooooooooooooooooooooooooooooooooooxooo
+ooooooxoooooooooooooooooooooooooooooxooooooooooooo
+oooooooooooooooooooooooooooooooooooxoooxoooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooxooooooooooooooooooooooooooooo
+ooooooooooxoooooooooooooooooooxooooooooooooooxoooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooxoooooooooooooo
+ooooooooooxxoooooooooooooooooooooooooooooooooooooo
+ooooxooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooxoooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooxooooooooooooooooooooooo
+oooooooooooooxoooooooxoooooooooooooooooooooooooooo
+ooooooooooooooxooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooooooox
+oooooooooooooooooooooooxoooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooxooooooooxo
+oooooooooooooxoooooooooxoooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooxoxoooooooooo
+oooooooooooooooooooooooxoooooooooooooooooooooooxoo
+oooooooooooooooooooooooooooooooooooxoooooooooooooo
+oooooooooooooooooooxoooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooxoooooooooxoooo
+oooooooooooooxooooooooxooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooxoooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooooooox
+ooxoooooooooooooxooooxooooooxoooooooooooooooooxooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooxooooooooooooooooooooooooooooooooooooooooo
+ooooooooooxoooooxooooooxooooooxooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooxooooooooooooo
+ooxoooooooooooooooooooooooooxoooooooooooooooooxooo
+oooooooooooooooooooooooxoooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooxoooooooooooooo
+ooooooooooooxooooooooooooooooooxoooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooxooooooooxo
+ooooxooooooooooooooooooooooooooooooooooooooooxooxo
+oooooxooooooooooooooooooooooooooooooxooooooooooooo
+oooooooooooooooooooxoooooooooooooxoooooooooooooooo
+oooooooooooooooooooooxooxooooooooooooooooooooooxoo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooxoooooxooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooxoooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooxoooooooxoooooooooooooooooooooooxooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooxooooooo
+oooooooooooooooooooooooxoooooooxoooooooooxoooooooo
+oooooooooooooooooooooooooooxooooooooooooooooxooooo
+ooooooooooooooooooooooooooooxooooooooooooxoooxoooo
+oooooooooooooooooooooooooooooooooooooooooooooooxoo
+oooooooooooooooooooooooooooooooooooooooooooooxoooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooxooooooooooooooxoooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooxooxooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooxoooooo
+ooooooooooooooxooooooooooooooooooooooooooooooooooo
+ooxoooooooxooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooxooooooooooooooooooox
+xoooooooooooooooooooooooooooooooooooxooooooooooooo
+oooooooooooooooooooooooooooooooooooooooxoooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooxoooooooooooxoooooooooooooooo
+oooooooooooooooooooooooooooooooxoooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooooxooo
+ooooooooooooooooooooooooooooooooooooxooooooooooooo
+xooooooooooooooooooooooooooooooooxoooooooooooooooo
+oooooooxooooooxooooooooooooooooooxoooooooooooooooo
+oooxoooooooooooooooxoooooooooooooooooooooooooooooo
+oooxoooooooxoooooooooxooooooooooooxooooooooooooooo
+ooooooooooooooooooooooooxooxoooooxoooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooxooxooooooooooooooooooooxoooooooooooooo
+ooooooooxooooooooooooooooooooxoxoooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooxooooooooooooooooooooooooooooooooo
+ooooooooooooxoooooooooooooooooxooooooxoooooooooooo
+ooooooooooooxooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooxoooooooooooooooooooooooooooooooxoooooooo
+oooooooooooooooxoooooooooooooxoooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooxoooooooooo
+oooooooooooooooxoooooooooooooooooooooooooooooooooo
+ooooxoooooooooooooooxooooooooooooooooooooooooooooo
+ooooooooxoooxooooooooooooooooooooooooooooooooooooo
+ooooxooooooooooooooooooooooooooooooooooooooxoooooo
+ooooxooooooooooooooooooooooxoooooooooooooooxoooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooxooooooooooooooooooooooooooxoooooooooo
+ooxooooooooooooxooooooooooxooooooxoooooooooooooooo
+oooooooooooooooooooooooooooxoooooooooooooooooooooo
+oooooooxoxooooooooooooooooooooooooooooooooooooooox
+ooooooooooooooooxooooooooxoooooooooooooooooooooooo
+ooooooooooooooooooooxoooxxoooooooooxxoooooooooxooo
+oooooooooooooooooooooooooxoooooooooooooooooooooooo
+oooooooooooooooooooooooooooooxoooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooooxooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooxooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooxooooooooooooooooooooooooooooooxoooooooo
+oooooooxoooooooxoooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooxooooooooooooooooooooxoo
+oooooooooooxoooooooooooxooooooooooooxooooooooooooo
+ooooooooooooooooooooooooooooxoooxooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooxooooooooooooooxo
+ooooooooooooooooxoooooooooxooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooxoooooooooooooooooo
+oooooooooooooooooooooooooooooooxoooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooxoxoooooooooooooooooooooox
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooxooooooooxoooooooooooooooooooooooo
+oooooxooooooxooooooooooooooooooooooooooooooooooooo
+oxoooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooooooxo
+oooooooooooooooooooooooooooooooooooooxooooooooooxo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooxooooooooxooooooooooxoooxooooooooxoo
+ooooxooxooooooooooooooooooooooooooooxooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooxoooooooooooooooooooooooooooooooooooo
+oooooooxoooooooooooooooooooooooooooooooooooooooooo
+oooooooxoooooooooooxxooooooooooooooooooooooooooooo
+oooxooooooooooooooooooooooooooooxooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooooooxo
+ooooooooxooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooxoooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oxooooooooooxooooooooooooooxoooooooooooooooooooooo
+oooooooooooxoooooooooooooooooooxoooooooooooooooooo
+oooooooooooooooooooooooooxoooooooooooooooooooooooo
+ooxooooooooxooooooooooooooxooooooooooooooooooooooo
+ooooooooooooooooooooooxooooooooooooooooooooooooooo
+oooooooxooooooooooxooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooxoooooo
+xxoooooooooooooooooooooooxoooooooooooooooooooooooo
+oooooooxoooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+xoooooooooooooooooooooooooooooooooooooooooooxooooo
+ooooooooooooooooooooooooooooooooooooooooooooooooxo
+ooooooxoooooooxooooooooooooooooooooooooooooooooooo
+oxoooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooxoooooooo
+oxoooxoooooooooooooooooooooooooooooooooooooooooooo
+ooooooxooooooooooooooooooooooooooooxoooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooxoooooooooooooooooooooooooxooo
+ooooooooooooooxoooooooooooooxoooxooooooooooooooooo
+oooooooooooooxooooooooooooooooxooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooxoooooooooooooooooooo
+xooooooooooooooooooooooooooooooooooooooooooooooooo
+
+Array list ---
+ooxxooooooxxooooxoooxooooooxxoxooxoooxoooooxoxxxoo
+ooooooxxoxooooooooooooooxxoxoxxoooxxoooooooxoxxxxo
+oooooooooooooxoxxoooooxoxoooooooooxxoooxxoooxoxxox
+xoooooooxoooxoooooxooxooxxoxxoooooooxoooooooooooxo
+xxoooxoooxoooooxxooxoxxxxooooooooxoxooooxxxoooooxo
+oooooooxoxooooooooooooooxoxooxxoxoxxxooooxoooooxoo
+oooxoxoooooxoxooxxoxoooxxooxxxxxooooooooxxoxxxoxox
+oooxooooxxoxooooxooooxoooxoxoooooxxooxoxxooooooooo
+xoxxoxoooxoooooxooooooxoxoxoooxooooxooooxooxoooooo
+xooxoooooxoxxoooxooooxoxoooxooooooxoxooooxxooooxox
+ooooxooxooooooooxxoooxoxoxoxooooxooooxoooooooooooo
+ooooxooxooxoxxoooxxoooooxooooooooooxxoooxxxooooxoo
+oooxooxoooooxooxxxoooooooooxoo
+
+mtest> mtdel -r 8000 -a
+
+mtest> mtp
+=========================================
+=              Memory Manager           =
+=========================================
+* Block size            : 10000 Bytes
+* Number of blocks      : 169
+* Free mem in last block: 312
+* Recycle list          : 
+[  0] = 296       [  9] = 16        [ 10] = 300       [ 11] = 34        
+[ 30] = 200       [ 41] = 33        [ 50] = 100       [ 92] = 29        
+[100] = 30        
+=========================================
+=             class MemTest             =
+=========================================
+Object list ---
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooxoooooooooooooooooooooooooooooooxooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooxoooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooxoooo
+ooooooooooooooooooooooxooooooooooooooooooooooooxoo
+ooooooooooooooooooooooooooooooooxooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooxooooooooo
+xooooxoooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooxooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooxoooooxoooooooxooooxxooooooooooooooooooooooooo
+oooooooooooooooxoooooooooooooooooooooooooooooooooo
+ooooooooooooxooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooooxooooooooooooooxoooooo
+ooooooooooooooooooooooooooooooooooooooooooooooooxo
+oooooooooooooooooooooooooooxoooooooooooooooooooooo
+oooooooooooooooooxoooooxoooooooooooooooooooooooooo
+ooooooooooooooooooooooooooooooooxooooooooooooooooo
+oooooooooooooooxoxoooxoooooooooooooooooooooooooooo
+ooxooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oxoooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooxoooooooooooooooooooooooooooooooooooo
+xooooooooooooooooooooxooooooooooooooxooooooooxoooo
+oooooooooooooooooxoooooooooooooooooooooooooooooooo
+oooooxoooooooooooooooooooooooooooooooooooooooooooo
+ooooooxoooooooooooooooooooooooxoooooooooxooooooooo
+ooooooooxoooooooooooooooxoooooooooooxoooooooooxooo
+ooooooooooxooooooooooooooxoooooooooooooooooooooooo
+ooooooooooooooooooooxoxoooxooooooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooxooooo
+ooooooooooooooooooooooooooooooooooooooooooooooxooo
+ooooooxoooooooooooooooooooooooooooooxooooooooooooo
+oooooooooooooooooooooooooooooooooooxoooxoooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooxooooooooooooooooooooooooooooo
+ooooooooooxoooooooooooooooooooxooooooooooooooxoooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooxoooooooooooooo
+ooooooooooxxoooooooooooooooooooooooooooooooooooooo
+ooooxooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooxoooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooxooooooooooooooooooooooo
+oooooooooooooxoooooooxoooooooooooooooooooooooooooo
+ooooooooooooooxooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooooooox
+oooooooooooooooooooooooxoooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooxooooooooxo
+oooooooooooooxoooooooooxoooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooxoxoooooooooo
+oooooooooooooooooooooooxoooooooooooooooooooooooxoo
+oooooooooooooooooooooooooooooooooooxoooooooooooooo
+oooooooooooooooooooxoooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooxoooooooooxoooo
+oooooooooooooxooooooooxooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooxoooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooooooox
+ooxoooooooooooooxooooxooooooxoooooooooooooooooxooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooxooooooooooooooooooooooooooooooooooooooooo
+ooooooooooxoooooxooooooxooooooxooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooxooooooooooooo
+ooxoooooooooooooooooooooooooxoooooooooooooooooxooo
+oooooooooooooooooooooooxoooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooxoooooooooooooo
+ooooooooooooxooooooooooooooooooxoooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooxooooooooxo
+ooooxooooooooooooooooooooooooooooooooooooooooxooxo
+oooooxooooooooooooooooooooooooooooooxooooooooooooo
+oooooooooooooooooooxoooooooooooooxoooooooooooooooo
+oooooooooooooooooooooxooxooooooooooooooooooooooxoo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooxoooooxooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooxoooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooxoooooooxoooooooooooooooooooooooxooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooxooooooo
+oooooooooooooooooooooooxoooooooxoooooooooxoooooooo
+oooooooooooooooooooooooooooxooooooooooooooooxooooo
+ooooooooooooooooooooooooooooxooooooooooooxoooxoooo
+oooooooooooooooooooooooooooooooooooooooooooooooxoo
+oooooooooooooooooooooooooooooooooooooooooooooxoooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooxooooooooooooooxoooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooxooxooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooxoooooo
+ooooooooooooooxooooooooooooooooooooooooooooooooooo
+ooxoooooooxooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooxooooooooooooooooooox
+xoooooooooooooooooooooooooooooooooooxooooooooooooo
+oooooooooooooooooooooooooooooooooooooooxoooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooxoooooooooooxoooooooooooooooo
+oooooooooooooooooooooooooooooooxoooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooooxooo
+ooooooooooooooooooooooooooooooooooooxooooooooooooo
+xooooooooooooooooooooooooooooooooxoooooooooooooooo
+oooooooxooooooxooooooooooooooooooxoooooooooooooooo
+oooxoooooooooooooooxoooooooooooooooooooooooooooooo
+oooxoooooooxoooooooooxooooooooooooxooooooooooooooo
+ooooooooooooooooooooooooxooxoooooxoooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooxooxooooooooooooooooooooxoooooooooooooo
+ooooooooxooooooooooooooooooooxoxoooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooxooooooooooooooooooooooooooooooooo
+ooooooooooooxoooooooooooooooooxooooooxoooooooooooo
+ooooooooooooxooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooxoooooooooooooooooooooooooooooooxoooooooo
+oooooooooooooooxoooooooooooooxoooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooxoooooooooo
+oooooooooooooooxoooooooooooooooooooooooooooooooooo
+ooooxoooooooooooooooxooooooooooooooooooooooooooooo
+ooooooooxoooxooooooooooooooooooooooooooooooooooooo
+ooooxooooooooooooooooooooooooooooooooooooooxoooooo
+ooooxooooooooooooooooooooooxoooooooooooooooxoooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooxooooooooooooooooooooooooooxoooooooooo
+ooxooooooooooooxooooooooooxooooooxoooooooooooooooo
+oooooooooooooooooooooooooooxoooooooooooooooooooooo
+oooooooxoxooooooooooooooooooooooooooooooooooooooox
+ooooooooooooooooxooooooooxoooooooooooooooooooooooo
+ooooooooooooooooooooxoooxxoooooooooxxoooooooooxooo
+oooooooooooooooooooooooooxoooooooooooooooooooooooo
+oooooooooooooooooooooooooooooxoooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooooxooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooxooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooxooooooooooooooooooooooooooooooxoooooooo
+oooooooxoooooooxoooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooxooooooooooooooooooooxoo
+oooooooooooxoooooooooooxooooooooooooxooooooooooooo
+ooooooooooooooooooooooooooooxoooxooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooxooooooooooooooxo
+ooooooooooooooooxoooooooooxooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooxoooooooooooooooooo
+oooooooooooooooooooooooooooooooxoooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooxoxoooooooooooooooooooooox
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooxooooooooxoooooooooooooooooooooooo
+oooooxooooooxooooooooooooooooooooooooooooooooooooo
+oxoooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooooooxo
+oooooooooooooooooooooooooooooooooooooxooooooooooxo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooxooooooooxooooooooooxoooxooooooooxoo
+ooooxooxooooooooooooooooooooooooooooxooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooxoooooooooooooooooooooooooooooooooooo
+oooooooxoooooooooooooooooooooooooooooooooooooooooo
+oooooooxoooooooooooxxooooooooooooooooooooooooooooo
+oooxooooooooooooooooooooooooooooxooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooooooxo
+ooooooooxooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooxoooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oxooooooooooxooooooooooooooxoooooooooooooooooooooo
+oooooooooooxoooooooooooooooooooxoooooooooooooooooo
+oooooooooooooooooooooooooxoooooooooooooooooooooooo
+ooxooooooooxooooooooooooooxooooooooooooooooooooooo
+ooooooooooooooooooooooxooooooooooooooooooooooooooo
+oooooooxooooooooooxooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooxoooooo
+xxoooooooooooooooooooooooxoooooooooooooooooooooooo
+oooooooxoooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+xoooooooooooooooooooooooooooooooooooooooooooxooooo
+ooooooooooooooooooooooooooooooooooooooooooooooooxo
+ooooooxoooooooxooooooooooooooooooooooooooooooooooo
+oxoooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooxoooooooo
+oxoooxoooooooooooooooooooooooooooooooooooooooooooo
+ooooooxooooooooooooooooooooooooooooxoooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooxoooooooooooooooooooooooooxooo
+ooooooooooooooxoooooooooooooxoooxooooooooooooooooo
+oooooooooooooxooooooooooooooooxooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooxoooooooooooooooooooo
+xooooooooooooooooooooooooooooooooooooooooooooooooo
+
+Array list ---
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+mtest> mtdel -i 1200 -a
+Size of array list (630) is <= 1200!!
+Error: Illegal option!! (1200)
+
+mtest> mtp
+=========================================
+=              Memory Manager           =
+=========================================
+* Block size            : 10000 Bytes
+* Number of blocks      : 169
+* Free mem in last block: 312
+* Recycle list          : 
+[  0] = 296       [  9] = 16        [ 10] = 300       [ 11] = 34        
+[ 30] = 200       [ 41] = 33        [ 50] = 100       [ 92] = 29        
+[100] = 30        
+=========================================
+=             class MemTest             =
+=========================================
+Object list ---
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooxoooooooooooooooooooooooooooooooxooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooxoooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooxoooo
+ooooooooooooooooooooooxooooooooooooooooooooooooxoo
+ooooooooooooooooooooooooooooooooxooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooxooooooooo
+xooooxoooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooxooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooxoooooxoooooooxooooxxooooooooooooooooooooooooo
+oooooooooooooooxoooooooooooooooooooooooooooooooooo
+ooooooooooooxooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooooxooooooooooooooxoooooo
+ooooooooooooooooooooooooooooooooooooooooooooooooxo
+oooooooooooooooooooooooooooxoooooooooooooooooooooo
+oooooooooooooooooxoooooxoooooooooooooooooooooooooo
+ooooooooooooooooooooooooooooooooxooooooooooooooooo
+oooooooooooooooxoxoooxoooooooooooooooooooooooooooo
+ooxooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oxoooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooxoooooooooooooooooooooooooooooooooooo
+xooooooooooooooooooooxooooooooooooooxooooooooxoooo
+oooooooooooooooooxoooooooooooooooooooooooooooooooo
+oooooxoooooooooooooooooooooooooooooooooooooooooooo
+ooooooxoooooooooooooooooooooooxoooooooooxooooooooo
+ooooooooxoooooooooooooooxoooooooooooxoooooooooxooo
+ooooooooooxooooooooooooooxoooooooooooooooooooooooo
+ooooooooooooooooooooxoxoooxooooooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooxooooo
+ooooooooooooooooooooooooooooooooooooooooooooooxooo
+ooooooxoooooooooooooooooooooooooooooxooooooooooooo
+oooooooooooooooooooooooooooooooooooxoooxoooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooxooooooooooooooooooooooooooooo
+ooooooooooxoooooooooooooooooooxooooooooooooooxoooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooxoooooooooooooo
+ooooooooooxxoooooooooooooooooooooooooooooooooooooo
+ooooxooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooxoooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooxooooooooooooooooooooooo
+oooooooooooooxoooooooxoooooooooooooooooooooooooooo
+ooooooooooooooxooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooooooox
+oooooooooooooooooooooooxoooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooxooooooooxo
+oooooooooooooxoooooooooxoooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooxoxoooooooooo
+oooooooooooooooooooooooxoooooooooooooooooooooooxoo
+oooooooooooooooooooooooooooooooooooxoooooooooooooo
+oooooooooooooooooooxoooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooxoooooooooxoooo
+oooooooooooooxooooooooxooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooxoooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooooooox
+ooxoooooooooooooxooooxooooooxoooooooooooooooooxooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooxooooooooooooooooooooooooooooooooooooooooo
+ooooooooooxoooooxooooooxooooooxooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooxooooooooooooo
+ooxoooooooooooooooooooooooooxoooooooooooooooooxooo
+oooooooooooooooooooooooxoooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooxoooooooooooooo
+ooooooooooooxooooooooooooooooooxoooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooxooooooooxo
+ooooxooooooooooooooooooooooooooooooooooooooooxooxo
+oooooxooooooooooooooooooooooooooooooxooooooooooooo
+oooooooooooooooooooxoooooooooooooxoooooooooooooooo
+oooooooooooooooooooooxooxooooooooooooooooooooooxoo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooxoooooxooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooxoooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooxoooooooxoooooooooooooooooooooooxooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooxooooooo
+oooooooooooooooooooooooxoooooooxoooooooooxoooooooo
+oooooooooooooooooooooooooooxooooooooooooooooxooooo
+ooooooooooooooooooooooooooooxooooooooooooxoooxoooo
+oooooooooooooooooooooooooooooooooooooooooooooooxoo
+oooooooooooooooooooooooooooooooooooooooooooooxoooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooxooooooooooooooxoooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooxooxooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooxoooooo
+ooooooooooooooxooooooooooooooooooooooooooooooooooo
+ooxoooooooxooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooxooooooooooooooooooox
+xoooooooooooooooooooooooooooooooooooxooooooooooooo
+oooooooooooooooooooooooooooooooooooooooxoooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooxoooooooooooxoooooooooooooooo
+oooooooooooooooooooooooooooooooxoooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooooxooo
+ooooooooooooooooooooooooooooooooooooxooooooooooooo
+xooooooooooooooooooooooooooooooooxoooooooooooooooo
+oooooooxooooooxooooooooooooooooooxoooooooooooooooo
+oooxoooooooooooooooxoooooooooooooooooooooooooooooo
+oooxoooooooxoooooooooxooooooooooooxooooooooooooooo
+ooooooooooooooooooooooooxooxoooooxoooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooxooxooooooooooooooooooooxoooooooooooooo
+ooooooooxooooooooooooooooooooxoxoooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooxooooooooooooooooooooooooooooooooo
+ooooooooooooxoooooooooooooooooxooooooxoooooooooooo
+ooooooooooooxooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooxoooooooooooooooooooooooooooooooxoooooooo
+oooooooooooooooxoooooooooooooxoooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooxoooooooooo
+oooooooooooooooxoooooooooooooooooooooooooooooooooo
+ooooxoooooooooooooooxooooooooooooooooooooooooooooo
+ooooooooxoooxooooooooooooooooooooooooooooooooooooo
+ooooxooooooooooooooooooooooooooooooooooooooxoooooo
+ooooxooooooooooooooooooooooxoooooooooooooooxoooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooxooooooooooooooooooooooooooxoooooooooo
+ooxooooooooooooxooooooooooxooooooxoooooooooooooooo
+oooooooooooooooooooooooooooxoooooooooooooooooooooo
+oooooooxoxooooooooooooooooooooooooooooooooooooooox
+ooooooooooooooooxooooooooxoooooooooooooooooooooooo
+ooooooooooooooooooooxoooxxoooooooooxxoooooooooxooo
+oooooooooooooooooooooooooxoooooooooooooooooooooooo
+oooooooooooooooooooooooooooooxoooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooooxooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooxooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooxooooooooooooooooooooooooooooooxoooooooo
+oooooooxoooooooxoooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooxooooooooooooooooooooxoo
+oooooooooooxoooooooooooxooooooooooooxooooooooooooo
+ooooooooooooooooooooooooooooxoooxooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooxooooooooooooooxo
+ooooooooooooooooxoooooooooxooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooxoooooooooooooooooo
+oooooooooooooooooooooooooooooooxoooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooxoxoooooooooooooooooooooox
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooxooooooooxoooooooooooooooooooooooo
+oooooxooooooxooooooooooooooooooooooooooooooooooooo
+oxoooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooooooxo
+oooooooooooooooooooooooooooooooooooooxooooooooooxo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooxooooooooxooooooooooxoooxooooooooxoo
+ooooxooxooooooooooooooooooooooooooooxooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooxoooooooooooooooooooooooooooooooooooo
+oooooooxoooooooooooooooooooooooooooooooooooooooooo
+oooooooxoooooooooooxxooooooooooooooooooooooooooooo
+oooxooooooooooooooooooooooooooooxooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooooooxo
+ooooooooxooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooxoooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oxooooooooooxooooooooooooooxoooooooooooooooooooooo
+oooooooooooxoooooooooooooooooooxoooooooooooooooooo
+oooooooooooooooooooooooooxoooooooooooooooooooooooo
+ooxooooooooxooooooooooooooxooooooooooooooooooooooo
+ooooooooooooooooooooooxooooooooooooooooooooooooooo
+oooooooxooooooooooxooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooxoooooo
+xxoooooooooooooooooooooooxoooooooooooooooooooooooo
+oooooooxoooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+xoooooooooooooooooooooooooooooooooooooooooooxooooo
+ooooooooooooooooooooooooooooooooooooooooooooooooxo
+ooooooxoooooooxooooooooooooooooooooooooooooooooooo
+oxoooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooxoooooooo
+oxoooxoooooooooooooooooooooooooooooooooooooooooooo
+ooooooxooooooooooooooooooooooooooooxoooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooxoooooooooooooooooooooooooxooo
+ooooooooooooooxoooooooooooooxoooxooooooooooooooooo
+oooooooooooooxooooooooooooooooxooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooxoooooooooooooooooooo
+xooooooooooooooooooooooooooooooooooooooooooooooooo
+
+Array list ---
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+mtest> mtp
+=========================================
+=              Memory Manager           =
+=========================================
+* Block size            : 10000 Bytes
+* Number of blocks      : 169
+* Free mem in last block: 312
+* Recycle list          : 
+[  0] = 296       [  9] = 16        [ 10] = 300       [ 11] = 34        
+[ 30] = 200       [ 41] = 33        [ 50] = 100       [ 92] = 29        
+[100] = 30        
+=========================================
+=             class MemTest             =
+=========================================
+Object list ---
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooxoooooooooooooooooooooooooooooooxooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooxoooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooxoooo
+ooooooooooooooooooooooxooooooooooooooooooooooooxoo
+ooooooooooooooooooooooooooooooooxooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooxooooooooo
+xooooxoooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooxooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooxoooooxoooooooxooooxxooooooooooooooooooooooooo
+oooooooooooooooxoooooooooooooooooooooooooooooooooo
+ooooooooooooxooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooooxooooooooooooooxoooooo
+ooooooooooooooooooooooooooooooooooooooooooooooooxo
+oooooooooooooooooooooooooooxoooooooooooooooooooooo
+oooooooooooooooooxoooooxoooooooooooooooooooooooooo
+ooooooooooooooooooooooooooooooooxooooooooooooooooo
+oooooooooooooooxoxoooxoooooooooooooooooooooooooooo
+ooxooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oxoooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooxoooooooooooooooooooooooooooooooooooo
+xooooooooooooooooooooxooooooooooooooxooooooooxoooo
+oooooooooooooooooxoooooooooooooooooooooooooooooooo
+oooooxoooooooooooooooooooooooooooooooooooooooooooo
+ooooooxoooooooooooooooooooooooxoooooooooxooooooooo
+ooooooooxoooooooooooooooxoooooooooooxoooooooooxooo
+ooooooooooxooooooooooooooxoooooooooooooooooooooooo
+ooooooooooooooooooooxoxoooxooooooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooxooooo
+ooooooooooooooooooooooooooooooooooooooooooooooxooo
+ooooooxoooooooooooooooooooooooooooooxooooooooooooo
+oooooooooooooooooooooooooooooooooooxoooxoooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooxooooooooooooooooooooooooooooo
+ooooooooooxoooooooooooooooooooxooooooooooooooxoooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooxoooooooooooooo
+ooooooooooxxoooooooooooooooooooooooooooooooooooooo
+ooooxooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooxoooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooxooooooooooooooooooooooo
+oooooooooooooxoooooooxoooooooooooooooooooooooooooo
+ooooooooooooooxooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooooooox
+oooooooooooooooooooooooxoooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooxooooooooxo
+oooooooooooooxoooooooooxoooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooxoxoooooooooo
+oooooooooooooooooooooooxoooooooooooooooooooooooxoo
+oooooooooooooooooooooooooooooooooooxoooooooooooooo
+oooooooooooooooooooxoooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooxoooooooooxoooo
+oooooooooooooxooooooooxooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooxoooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooooooox
+ooxoooooooooooooxooooxooooooxoooooooooooooooooxooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooxooooooooooooooooooooooooooooooooooooooooo
+ooooooooooxoooooxooooooxooooooxooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooxooooooooooooo
+ooxoooooooooooooooooooooooooxoooooooooooooooooxooo
+oooooooooooooooooooooooxoooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooxoooooooooooooo
+ooooooooooooxooooooooooooooooooxoooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooxooooooooxo
+ooooxooooooooooooooooooooooooooooooooooooooooxooxo
+oooooxooooooooooooooooooooooooooooooxooooooooooooo
+oooooooooooooooooooxoooooooooooooxoooooooooooooooo
+oooooooooooooooooooooxooxooooooooooooooooooooooxoo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooxoooooxooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooxoooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooxoooooooxoooooooooooooooooooooooxooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooxooooooo
+oooooooooooooooooooooooxoooooooxoooooooooxoooooooo
+oooooooooooooooooooooooooooxooooooooooooooooxooooo
+ooooooooooooooooooooooooooooxooooooooooooxoooxoooo
+oooooooooooooooooooooooooooooooooooooooooooooooxoo
+oooooooooooooooooooooooooooooooooooooooooooooxoooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooxooooooooooooooxoooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooxooxooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooxoooooo
+ooooooooooooooxooooooooooooooooooooooooooooooooooo
+ooxoooooooxooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooxooooooooooooooooooox
+xoooooooooooooooooooooooooooooooooooxooooooooooooo
+oooooooooooooooooooooooooooooooooooooooxoooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooxoooooooooooxoooooooooooooooo
+oooooooooooooooooooooooooooooooxoooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooooxooo
+ooooooooooooooooooooooooooooooooooooxooooooooooooo
+xooooooooooooooooooooooooooooooooxoooooooooooooooo
+oooooooxooooooxooooooooooooooooooxoooooooooooooooo
+oooxoooooooooooooooxoooooooooooooooooooooooooooooo
+oooxoooooooxoooooooooxooooooooooooxooooooooooooooo
+ooooooooooooooooooooooooxooxoooooxoooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooxooxooooooooooooooooooooxoooooooooooooo
+ooooooooxooooooooooooooooooooxoxoooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooxooooooooooooooooooooooooooooooooo
+ooooooooooooxoooooooooooooooooxooooooxoooooooooooo
+ooooooooooooxooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooxoooooooooooooooooooooooooooooooxoooooooo
+oooooooooooooooxoooooooooooooxoooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooxoooooooooo
+oooooooooooooooxoooooooooooooooooooooooooooooooooo
+ooooxoooooooooooooooxooooooooooooooooooooooooooooo
+ooooooooxoooxooooooooooooooooooooooooooooooooooooo
+ooooxooooooooooooooooooooooooooooooooooooooxoooooo
+ooooxooooooooooooooooooooooxoooooooooooooooxoooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooxooooooooooooooooooooooooooxoooooooooo
+ooxooooooooooooxooooooooooxooooooxoooooooooooooooo
+oooooooooooooooooooooooooooxoooooooooooooooooooooo
+oooooooxoxooooooooooooooooooooooooooooooooooooooox
+ooooooooooooooooxooooooooxoooooooooooooooooooooooo
+ooooooooooooooooooooxoooxxoooooooooxxoooooooooxooo
+oooooooooooooooooooooooooxoooooooooooooooooooooooo
+oooooooooooooooooooooooooooooxoooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooooxooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooxooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooxooooooooooooooooooooooooooooooxoooooooo
+oooooooxoooooooxoooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooxooooooooooooooooooooxoo
+oooooooooooxoooooooooooxooooooooooooxooooooooooooo
+ooooooooooooooooooooooooooooxoooxooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooxooooooooooooooxo
+ooooooooooooooooxoooooooooxooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooxoooooooooooooooooo
+oooooooooooooooooooooooooooooooxoooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooxoxoooooooooooooooooooooox
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooxooooooooxoooooooooooooooooooooooo
+oooooxooooooxooooooooooooooooooooooooooooooooooooo
+oxoooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooooooxo
+oooooooooooooooooooooooooooooooooooooxooooooooooxo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooxooooooooxooooooooooxoooxooooooooxoo
+ooooxooxooooooooooooooooooooooooooooxooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooxoooooooooooooooooooooooooooooooooooo
+oooooooxoooooooooooooooooooooooooooooooooooooooooo
+oooooooxoooooooooooxxooooooooooooooooooooooooooooo
+oooxooooooooooooooooooooooooooooxooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooooooxo
+ooooooooxooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooxoooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oxooooooooooxooooooooooooooxoooooooooooooooooooooo
+oooooooooooxoooooooooooooooooooxoooooooooooooooooo
+oooooooooooooooooooooooooxoooooooooooooooooooooooo
+ooxooooooooxooooooooooooooxooooooooooooooooooooooo
+ooooooooooooooooooooooxooooooooooooooooooooooooooo
+oooooooxooooooooooxooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooxoooooo
+xxoooooooooooooooooooooooxoooooooooooooooooooooooo
+oooooooxoooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+xoooooooooooooooooooooooooooooooooooooooooooxooooo
+ooooooooooooooooooooooooooooooooooooooooooooooooxo
+ooooooxoooooooxooooooooooooooooooooooooooooooooooo
+oxoooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooxoooooooo
+oxoooxoooooooooooooooooooooooooooooooooooooooooooo
+ooooooxooooooooooooooooooooooooooooxoooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooxoooooooooooooooooooooooooxooo
+ooooooooooooooxoooooooooooooxoooxooooooooooooooooo
+oooooooooooooxooooooooooooooooxooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooxoooooooooooooooooooo
+xooooooooooooooooooooooooooooooooooooooooooooooooo
+
+Array list ---
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+mtest> mtp
+=========================================
+=              Memory Manager           =
+=========================================
+* Block size            : 10000 Bytes
+* Number of blocks      : 169
+* Free mem in last block: 312
+* Recycle list          : 
+[  0] = 296       [  9] = 16        [ 10] = 300       [ 11] = 34        
+[ 30] = 200       [ 41] = 33        [ 50] = 100       [ 92] = 29        
+[100] = 30        
+=========================================
+=             class MemTest             =
+=========================================
+Object list ---
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooxoooooooooooooooooooooooooooooooxooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooxoooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooxoooo
+ooooooooooooooooooooooxooooooooooooooooooooooooxoo
+ooooooooooooooooooooooooooooooooxooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooxooooooooo
+xooooxoooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooxooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooxoooooxoooooooxooooxxooooooooooooooooooooooooo
+oooooooooooooooxoooooooooooooooooooooooooooooooooo
+ooooooooooooxooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooooxooooooooooooooxoooooo
+ooooooooooooooooooooooooooooooooooooooooooooooooxo
+oooooooooooooooooooooooooooxoooooooooooooooooooooo
+oooooooooooooooooxoooooxoooooooooooooooooooooooooo
+ooooooooooooooooooooooooooooooooxooooooooooooooooo
+oooooooooooooooxoxoooxoooooooooooooooooooooooooooo
+ooxooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oxoooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooxoooooooooooooooooooooooooooooooooooo
+xooooooooooooooooooooxooooooooooooooxooooooooxoooo
+oooooooooooooooooxoooooooooooooooooooooooooooooooo
+oooooxoooooooooooooooooooooooooooooooooooooooooooo
+ooooooxoooooooooooooooooooooooxoooooooooxooooooooo
+ooooooooxoooooooooooooooxoooooooooooxoooooooooxooo
+ooooooooooxooooooooooooooxoooooooooooooooooooooooo
+ooooooooooooooooooooxoxoooxooooooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooxooooo
+ooooooooooooooooooooooooooooooooooooooooooooooxooo
+ooooooxoooooooooooooooooooooooooooooxooooooooooooo
+oooooooooooooooooooooooooooooooooooxoooxoooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooxooooooooooooooooooooooooooooo
+ooooooooooxoooooooooooooooooooxooooooooooooooxoooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooxoooooooooooooo
+ooooooooooxxoooooooooooooooooooooooooooooooooooooo
+ooooxooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooxoooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooxooooooooooooooooooooooo
+oooooooooooooxoooooooxoooooooooooooooooooooooooooo
+ooooooooooooooxooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooooooox
+oooooooooooooooooooooooxoooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooxooooooooxo
+oooooooooooooxoooooooooxoooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooxoxoooooooooo
+oooooooooooooooooooooooxoooooooooooooooooooooooxoo
+oooooooooooooooooooooooooooooooooooxoooooooooooooo
+oooooooooooooooooooxoooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooxoooooooooxoooo
+oooooooooooooxooooooooxooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooxoooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooooooox
+ooxoooooooooooooxooooxooooooxoooooooooooooooooxooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooxooooooooooooooooooooooooooooooooooooooooo
+ooooooooooxoooooxooooooxooooooxooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooxooooooooooooo
+ooxoooooooooooooooooooooooooxoooooooooooooooooxooo
+oooooooooooooooooooooooxoooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooxoooooooooooooo
+ooooooooooooxooooooooooooooooooxoooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooxooooooooxo
+ooooxooooooooooooooooooooooooooooooooooooooooxooxo
+oooooxooooooooooooooooooooooooooooooxooooooooooooo
+oooooooooooooooooooxoooooooooooooxoooooooooooooooo
+oooooooooooooooooooooxooxooooooooooooooooooooooxoo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooxoooooxooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooxoooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooxoooooooxoooooooooooooooooooooooxooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooxooooooo
+oooooooooooooooooooooooxoooooooxoooooooooxoooooooo
+oooooooooooooooooooooooooooxooooooooooooooooxooooo
+ooooooooooooooooooooooooooooxooooooooooooxoooxoooo
+oooooooooooooooooooooooooooooooooooooooooooooooxoo
+oooooooooooooooooooooooooooooooooooooooooooooxoooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooxooooooooooooooxoooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooxooxooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooxoooooo
+ooooooooooooooxooooooooooooooooooooooooooooooooooo
+ooxoooooooxooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooxooooooooooooooooooox
+xoooooooooooooooooooooooooooooooooooxooooooooooooo
+oooooooooooooooooooooooooooooooooooooooxoooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooxoooooooooooxoooooooooooooooo
+oooooooooooooooooooooooooooooooxoooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooooxooo
+ooooooooooooooooooooooooooooooooooooxooooooooooooo
+xooooooooooooooooooooooooooooooooxoooooooooooooooo
+oooooooxooooooxooooooooooooooooooxoooooooooooooooo
+oooxoooooooooooooooxoooooooooooooooooooooooooooooo
+oooxoooooooxoooooooooxooooooooooooxooooooooooooooo
+ooooooooooooooooooooooooxooxoooooxoooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooxooxooooooooooooooooooooxoooooooooooooo
+ooooooooxooooooooooooooooooooxoxoooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooxooooooooooooooooooooooooooooooooo
+ooooooooooooxoooooooooooooooooxooooooxoooooooooooo
+ooooooooooooxooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooxoooooooooooooooooooooooooooooooxoooooooo
+oooooooooooooooxoooooooooooooxoooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooxoooooooooo
+oooooooooooooooxoooooooooooooooooooooooooooooooooo
+ooooxoooooooooooooooxooooooooooooooooooooooooooooo
+ooooooooxoooxooooooooooooooooooooooooooooooooooooo
+ooooxooooooooooooooooooooooooooooooooooooooxoooooo
+ooooxooooooooooooooooooooooxoooooooooooooooxoooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooxooooooooooooooooooooooooooxoooooooooo
+ooxooooooooooooxooooooooooxooooooxoooooooooooooooo
+oooooooooooooooooooooooooooxoooooooooooooooooooooo
+oooooooxoxooooooooooooooooooooooooooooooooooooooox
+ooooooooooooooooxooooooooxoooooooooooooooooooooooo
+ooooooooooooooooooooxoooxxoooooooooxxoooooooooxooo
+oooooooooooooooooooooooooxoooooooooooooooooooooooo
+oooooooooooooooooooooooooooooxoooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooooxooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooxooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooxooooooooooooooooooooooooooooooxoooooooo
+oooooooxoooooooxoooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooxooooooooooooooooooooxoo
+oooooooooooxoooooooooooxooooooooooooxooooooooooooo
+ooooooooooooooooooooooooooooxoooxooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooxooooooooooooooxo
+ooooooooooooooooxoooooooooxooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooxoooooooooooooooooo
+oooooooooooooooooooooooooooooooxoooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooxoxoooooooooooooooooooooox
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooxooooooooxoooooooooooooooooooooooo
+oooooxooooooxooooooooooooooooooooooooooooooooooooo
+oxoooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooooooxo
+oooooooooooooooooooooooooooooooooooooxooooooooooxo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooxooooooooxooooooooooxoooxooooooooxoo
+ooooxooxooooooooooooooooooooooooooooxooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooxoooooooooooooooooooooooooooooooooooo
+oooooooxoooooooooooooooooooooooooooooooooooooooooo
+oooooooxoooooooooooxxooooooooooooooooooooooooooooo
+oooxooooooooooooooooooooooooooooxooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooooooxo
+ooooooooxooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooxoooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oxooooooooooxooooooooooooooxoooooooooooooooooooooo
+oooooooooooxoooooooooooooooooooxoooooooooooooooooo
+oooooooooooooooooooooooooxoooooooooooooooooooooooo
+ooxooooooooxooooooooooooooxooooooooooooooooooooooo
+ooooooooooooooooooooooxooooooooooooooooooooooooooo
+oooooooxooooooooooxooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooxoooooo
+xxoooooooooooooooooooooooxoooooooooooooooooooooooo
+oooooooxoooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+xoooooooooooooooooooooooooooooooooooooooooooxooooo
+ooooooooooooooooooooooooooooooooooooooooooooooooxo
+ooooooxoooooooxooooooooooooooooooooooooooooooooooo
+oxoooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooxoooooooo
+oxoooxoooooooooooooooooooooooooooooooooooooooooooo
+ooooooxooooooooooooooooooooooooooooxoooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooxoooooooooooooooooooooooooxooo
+ooooooooooooooxoooooooooooooxoooxooooooooooooooooo
+oooooooooooooxooooooooooooooooxooooooooooooooooooo
+oooooooooooooooooooooooooooooooooooooooooooooooooo
+oooooooooooooooooooooooooooooxoooooooooooooooooooo
+xooooooooooooooooooooooooooooooooooooooooooooooooo
+
+Array list ---
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+mtest> q -f 
+

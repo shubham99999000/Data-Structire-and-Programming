@@ -1,0 +1,13 @@
+task> taski 100
+Task manager is initialized (100)
+
+task> taskn -n rdQd 312
+Task node inserted: (rdQd, 312)
+
+task> taskr -n rdQd 
+Task node removed: (rdQd, 312)
+
+task> taskr -n rdQd 
+
+task> quit -f
+

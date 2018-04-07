@@ -1,0 +1,24 @@
+task> taski 100
+Task manager is initialized (100)
+
+task> taskn -n apl 12
+Task node inserted: (apl, 12)
+
+task> taskn -n ldk 523
+Task node inserted: (ldk, 523)
+
+task> taskn -n fdrw 23
+Task node inserted: (fdrw, 23)
+
+task> taskn -n ede 987
+Task node inserted: (ede, 987)
+
+task> taskq -hash
+(ede, 987)
+(apl, 12)
+(fdrw, 23)
+(ldk, 523)
+Number of tasks: 4
+
+task> quit -f
+

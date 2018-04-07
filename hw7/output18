@@ -1,0 +1,139 @@
+task> taski 100
+Task manager is initialized (100)
+
+task> taskn -n Ssd 96
+Task node inserted: (Ssd, 96)
+
+task> taskn -n Ls 514
+Task node inserted: (Ls, 514)
+
+task> taskn -n fDL 278
+Task node inserted: (fDL, 278)
+
+task> taskn -n SK 987
+Task node inserted: (SK, 987)
+
+task> taskn -n aCD 9
+Task node inserted: (aCD, 9)
+
+task> taskn -n lDW 34
+Task node inserted: (lDW, 34)
+
+task> taskn -n fdrw 957
+Task node inserted: (fdrw, 957)
+
+task> taskn -n eD 16
+Task node inserted: (eD, 16)
+
+task> taskn -n aHl 12
+Task node inserted: (aHl, 12)
+
+task> taskn -n lFLk 54
+Task node inserted: (lFLk, 54)
+
+task> taskn -n fdrw 82
+Error: Task node (fdrw) already exists.
+
+task> taskn -n ede 92
+Task node inserted: (ede, 92)
+
+task> taskn -n apl 27
+Task node inserted: (apl, 27)
+
+task> taskn -n pbu 365
+Task node inserted: (pbu, 365)
+
+task> taskn -n fwdv 23
+Task node inserted: (fwdv, 23)
+
+task> taskn -n erwetb 48
+Task node inserted: (erwetb, 48)
+
+task> taskn -n swtrbm 214
+Task node inserted: (swtrbm, 214)
+
+task> taskn -n wecpo 397
+Task node inserted: (wecpo, 397)
+
+task> taskn -n rdegy 286
+Task node inserted: (rdegy, 286)
+
+task> taskn -n aer 1
+Task node inserted: (aer, 1)
+
+task> taskq -heap
+(aer, 1)
+(aCD, 9)
+(fwdv, 23)
+(aHl, 12)
+(lFLk, 54)
+(lDW, 34)
+(apl, 27)
+(swtrbm, 214)
+(eD, 16)
+(Ls, 514)
+(ede, 92)
+(fDL, 278)
+(pbu, 365)
+(fdrw, 957)
+(erwetb, 48)
+(SK, 987)
+(wecpo, 397)
+(rdegy, 286)
+(Ssd, 96)
+Number of tasks: 19
+
+task> taskq -hash
+(eD, 16)
+(ede, 92)
+(fDL, 278)
+(pbu, 365)
+(wecpo, 397)
+(aHl, 12)
+(aer, 1)
+(apl, 27)
+(SK, 987)
+(rdegy, 286)
+(lFLk, 54)
+(erwetb, 48)
+(lDW, 34)
+(Ls, 514)
+(swtrbm, 214)
+(aCD, 9)
+(fdrw, 957)
+(Ssd, 96)
+(fwdv, 23)
+Number of tasks: 19
+
+task> taskr -n wecpo 
+Task node removed: (wecpo, 397)
+
+task> taskq -min
+Min task node: (aer, 1)
+
+task> taskr -n aHl
+Task node removed: (aHl, 12)
+
+task> taskq -min
+Min task node: (aer, 1)
+
+task> taskr -n aCD
+Task node removed: (aCD, 9)
+
+task> taskq -min
+Min task node: (aer, 1)
+
+task> taskr -n eD
+Task node removed: (eD, 16)
+
+task> taskq -min
+Min task node: (aer, 1)
+
+task> taskr -n Ls
+Task node removed: (Ls, 514)
+
+task> taskq -min
+Min task node: (aer, 1)
+
+task> quit -f
+

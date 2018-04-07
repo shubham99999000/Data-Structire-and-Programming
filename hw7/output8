@@ -1,0 +1,26 @@
+task> taski 100
+Task manager is initialized (100)
+
+task> taskn -n dlk 25
+Task node inserted: (dlk, 25)
+
+task> taskn -n fkiu 682
+Task node inserted: (fkiu, 682)
+
+task> taskn -n Dolk 23
+Task node inserted: (Dolk, 23)
+
+task> taskn -n fpFD 64
+Task node inserted: (fpFD, 64)
+
+task> taskn -n QPFds 185
+Task node inserted: (QPFds, 185)
+
+task> taskn -n wlkv 391
+Task node inserted: (wlkv, 391)
+
+task> taskq -min
+Min task node: (Dolk, 23)
+
+task> quit -f
+

@@ -1,0 +1,26 @@
+task> taski 100
+Task manager is initialized (100)
+
+task> taskn -n apl 12
+Task node inserted: (apl, 12)
+
+task> taskn -n ldk 523
+Task node inserted: (ldk, 523)
+
+task> taskn -n fdrw 23
+Task node inserted: (fdrw, 23)
+
+task> taskn -n ede 987
+Task node inserted: (ede, 987)
+
+task> taskq -min
+Min task node: (apl, 12)
+
+task> taskr -n apl
+Task node removed: (apl, 12)
+
+task> taskq -min
+Min task node: (fdrw, 23)
+
+task> quit -f
+

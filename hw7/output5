@@ -1,0 +1,46 @@
+task> taski 100
+Task manager is initialized (100)
+
+task> taskn -n rdQd 312
+Task node inserted: (rdQd, 312)
+
+task> taskn -n mfu 220
+Task node inserted: (mfu, 220)
+
+task> taskn -n plsng 48
+Task node inserted: (plsng, 48)
+
+task> taskn -n wyfir 951
+Task node inserted: (wyfir, 951)
+
+task> taskr -n rdQd 
+Task node removed: (rdQd, 312)
+
+task> taskr -n mfu 
+Task node removed: (mfu, 220)
+
+task> taskr -n plsng 
+Task node removed: (plsng, 48)
+
+task> taskr -n wyfir 
+Task node removed: (wyfir, 951)
+
+task> taskn -n rdQd 312
+Error: Task node (rdQd) already exists.
+
+task> taskn -n mfu 220
+Error: Task node (mfu) already exists.
+
+task> taskn -n plsng 48
+Error: Task node (plsng) already exists.
+
+task> taskr -n plsng 
+
+task> taskn -n wyfir 951
+Error: Task node (wyfir) already exists.
+
+task> taskq plsng 
+127Query succeeds: (plsng, 48)
+
+task> quit -f
+

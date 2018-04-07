@@ -1,0 +1,26 @@
+task> taski 100
+Task manager is initialized (100)
+
+task> taskn -n rdQd 312
+Task node inserted: (rdQd, 312)
+
+task> taskn -n mfu 220
+Task node inserted: (mfu, 220)
+
+task> taskn -n plsng 48
+Task node inserted: (plsng, 48)
+
+task> taskn -n wyfir 951
+Task node inserted: (wyfir, 951)
+
+task> taskr -n plsng 245
+Error: Extra option!! (245)
+
+task> taskn -n rdQd 856 
+Error: Task node (rdQd) already exists.
+
+task> taskn -n wyfir 47
+Error: Task node (wyfir) already exists.
+
+task> quit -f
+

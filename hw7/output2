@@ -1,0 +1,11 @@
+task> taski 100
+Task manager is initialized (100)
+
+task> taskn -n Pdm 150
+Task node inserted: (Pdm, 150)
+
+task> taskn -n Pdm 22
+Error: Task node (Pdm) already exists.
+
+task> quit -f
+
